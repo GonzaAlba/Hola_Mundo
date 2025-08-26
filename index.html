@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Colores del tema para A2HS -->
+  <meta name="theme-color" content="#ff6a00" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+
+  <title>Hola mundo PWA</title>
+
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <link rel="icon" href="./icons/logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="./src/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <button id="installBtn" class="install-btn" hidden title="Instalar app">
+      📲 Instalar
+    </button>
+  </header>
+
+  <main class="hero">
+    <h1 class="rainbow">¡Hola mundo!</h1>
+    <p class="tagline">Una PWA pequeñita, colorida y divertida 🌈</p>
+  </main>
+
+  <footer class="foot">
+    <a href="https://github.com" target="_blank" rel="noreferrer">Hecho con GitHub Pages</a>
+  </footer>
+
+  <script type="module" src="./src/app.js"></script>
+</body>
+</html>
