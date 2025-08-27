@@ -1,6 +1,10 @@
 /* Registro del Service Worker (necesario para que el navegador permita instalar la PWA) */
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('./service-worker.js').catch(console.error);
+  // Use an absolute path so the service worker registers correctly
+  // even though this script lives in the /src directory.
+  navigator.serviceWorker
+    .register('/service-worker.js')
+    .catch(console.error);
 }
 
 /* Manejo del evento beforeinstallprompt para mostrar nuestro botón “Instalar” */
